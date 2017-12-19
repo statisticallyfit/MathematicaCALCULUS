@@ -1,0 +1,1857 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     69384,       1849]
+NotebookOptionsPosition[     57621,       1646]
+NotebookOutlinePosition[     57972,       1661]
+CellTagsIndexPosition[     57929,       1658]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Source: Mitchell University class notes", "Text",
+ CellChangeTimes->{{3.719307379681293*^9, 
+  3.71930739853787*^9}},ExpressionUUID->"51ac1a17-2fa9-4507-87fb-\
+8bf00c1e4855"],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{
+  Inherited, 3},ExpressionUUID->"e1d2312c-0214-4574-b814-bf97354c0a26"],
+
+Cell[TextData[{
+ StyleBox["You Try It 8.1: ",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ "\n* tank is completely filled with oil\n* liquid is between a=0 and b=4\n* \
+must pump oil to height 3 ft above tank rim. "
+}], "Text",
+ CellChangeTimes->{{3.719307443423933*^9, 3.7193074479078693`*^9}, {
+  3.719307626271867*^9, 3.719307651458644*^9}, {3.7193076922968597`*^9, 
+  3.719307706591625*^9}},ExpressionUUID->"17c792ad-a08a-4261-8f35-\
+616811a2ad17"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"50", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "4"], 
+   RowBox[{"\[Pi]", "*", "y", "*", 
+    RowBox[{"(", 
+     RowBox[{"7", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7193074529712143`*^9, 
+  3.719307460906663*^9}},ExpressionUUID->"edd87010-365d-4468-829f-\
+3679ebb4b009"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"5200", " ", "\[Pi]"}], "3"]], "Output",
+ CellChangeTimes->{3.719307355421967*^9, 
+  3.7193074616597157`*^9},ExpressionUUID->"2d5b9328-7664-4160-86c1-\
+df49deb57cc8"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["You Try It 8.2:",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ "\n",
+ StyleBox["(a)",
+  FontWeight->"Bold"],
+ "\n* tank is completely filled with oil\n* liquid is between a = -10 and b = \
+0\n* must pump liquid to height 5 ft above tank rim. "
+}], "Text",
+ CellChangeTimes->{{3.719307506928199*^9, 3.719307509777315*^9}, {
+  3.719307588855893*^9, 3.7193076084503613`*^9}, {3.7193076470168943`*^9, 
+  3.719307648952273*^9}, {3.719307708849009*^9, 3.719307726329239*^9}, {
+  3.71930794039088*^9, 
+  3.7193079422956*^9}},ExpressionUUID->"73ff7b20-5573-402d-8a43-4de46c9060b7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"50", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", 
+    RowBox[{"-", "10"}], "0"], 
+   RowBox[{"\[Pi]", "*", 
+    RowBox[{"(", 
+     RowBox[{"100", "-", 
+      SuperscriptBox["y", "2"]}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"5", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.719307529409498*^9, 3.719307545649818*^9}, {
+  3.719307686186449*^9, 3.719307689136376*^9}, {3.7193077230087433`*^9, 
+  3.719307723130004*^9}},ExpressionUUID->"9a497ed1-51c2-49b8-8b71-\
+07498d06f203"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"875000", " ", "\[Pi]"}], "3"]], "Output",
+ CellChangeTimes->{3.719307668550025*^9, 
+  3.719307729034092*^9},ExpressionUUID->"c8fd9c52-833f-4cba-bfc8-\
+c62057103280"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["You Try It 8.2: \n",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ StyleBox["(b)",
+  FontWeight->"Bold"],
+ "\n* tank is completely filled with oil\n* liquid is between a = -10 and b = \
+0\n* must pump liquid to height 0 ft above tank rim. (tank rim is at ground \
+level)"
+}], "Text",
+ CellChangeTimes->{{3.719307506928199*^9, 3.719307509777315*^9}, {
+  3.719307588855893*^9, 3.7193076084503613`*^9}, {3.7193076470168943`*^9, 
+  3.719307648952273*^9}, {3.719307708849009*^9, 3.719307726329239*^9}, {
+  3.719307897847713*^9, 
+  3.71930794991197*^9}},ExpressionUUID->"defca606-ad58-46ac-b741-\
+efe6b591089e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"50", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", 
+    RowBox[{"-", "10"}], "0"], 
+   RowBox[{"\[Pi]", "*", 
+    RowBox[{"(", 
+     RowBox[{"100", "-", 
+      SuperscriptBox["y", "2"]}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"0", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7193077724896517`*^9, 
+  3.719307772776556*^9}},ExpressionUUID->"593cea9e-814a-4dcf-a19d-\
+d2d0f01c9adf"],
+
+Cell[BoxData[
+ RowBox[{"125000", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{
+  3.7193077734593782`*^9},ExpressionUUID->"4c4aa7b5-9e99-46c7-b3f1-\
+358fdd6d7925"]
+}, Open  ]],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{
+  Inherited, 3},ExpressionUUID->"89315449-6252-4dc2-8a5a-ebc717ff043f"],
+
+Cell[TextData[{
+ StyleBox["You Try It 8.3:\n",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ StyleBox["(a)",
+  FontWeight->"Bold"],
+ "\n* tank is completely filled with oil\n* liquid is between a = 0 and b = 4\
+\n* must pump liquid to the tank rim (at height 4)"
+}], "Text",
+ CellChangeTimes->{{3.719307506928199*^9, 3.719307509777315*^9}, {
+  3.719307588855893*^9, 3.7193076084503613`*^9}, {3.7193076470168943`*^9, 
+  3.719307648952273*^9}, {3.719307708849009*^9, 3.719307726329239*^9}, {
+  3.719307980942438*^9, 3.71930798411865*^9}, {3.719308267991088*^9, 
+  3.7193082858221283`*^9}},ExpressionUUID->"17a2a098-9a3d-4f5a-ac4c-\
+09d337973182"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"50", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "4"], 
+   RowBox[{"\[Pi]", "*", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"\[Sqrt]", 
+        RowBox[{"(", "y", ")"}]}], "-", "2"}], ")"}], "2"], "*", 
+    RowBox[{"(", 
+     RowBox[{"4", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7193082927845*^9, 
+  3.719308455718115*^9}},ExpressionUUID->"c51a5882-6a32-4489-98d9-\
+c9c460d3f47c"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"1280", " ", "\[Pi]"}], "3"]], "Output",
+ CellChangeTimes->{{3.719308412057592*^9, 
+  3.7193084567935143`*^9}},ExpressionUUID->"e678f39b-d9ef-4186-8288-\
+e2d3286c00a1"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["You Try It 8.3:\n",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ StyleBox["(b)",
+  FontWeight->"Bold"],
+ "\n* tank is completely filled with oil\n* liquid is between a = 0 and b = 4\
+\n* must pump liquid to 3 ft above the tank rim at height = 4(so total 7)"
+}], "Text",
+ CellChangeTimes->{{3.719307506928199*^9, 3.719307509777315*^9}, {
+  3.719307588855893*^9, 3.7193076084503613`*^9}, {3.7193076470168943`*^9, 
+  3.719307648952273*^9}, {3.719307708849009*^9, 3.719307726329239*^9}, {
+  3.719307980942438*^9, 3.71930798411865*^9}, {3.719308267991088*^9, 
+  3.7193082858221283`*^9}, {3.719308476197627*^9, 
+  3.719308500038249*^9}},ExpressionUUID->"9f317910-e299-4235-ab20-\
+0028c7030a4d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"50", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "4"], 
+   RowBox[{"\[Pi]", "*", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"\[Sqrt]", 
+        RowBox[{"(", "y", ")"}]}], "-", "2"}], ")"}], "2"], "*", 
+    RowBox[{"(", 
+     RowBox[{"3", "+", "4", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7193082927845*^9, 3.719308455718115*^9}, {
+  3.7193084874384727`*^9, 
+  3.7193084879649076`*^9}},ExpressionUUID->"c9fb3ae7-5cac-42a0-af99-\
+0a065554c1c9"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"2480", " ", "\[Pi]"}], "3"]], "Output",
+ CellChangeTimes->{{3.719308412057592*^9, 3.7193084567935143`*^9}, 
+   3.719308504340109*^9},ExpressionUUID->"ba4460a4-adb4-45ff-9783-\
+f186f1c24be2"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["You Try It 8.3:\n",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ StyleBox["(c)",
+  FontWeight->"Bold"],
+ "\n* tank has only 1 foot of oil. \n* liquid is between a = 0 and b = 1\n* \
+must pump liquid to the tank rim (at height 4)"
+}], "Text",
+ CellChangeTimes->{{3.719307506928199*^9, 3.719307509777315*^9}, {
+  3.719307588855893*^9, 3.7193076084503613`*^9}, {3.7193076470168943`*^9, 
+  3.719307648952273*^9}, {3.719307708849009*^9, 3.719307726329239*^9}, {
+  3.719307980942438*^9, 3.71930798411865*^9}, {3.719308267991088*^9, 
+  3.7193082858221283`*^9}, {3.719308515116885*^9, 
+  3.719308525770459*^9}},ExpressionUUID->"2dc65c6b-00c6-4e8b-b360-\
+eabcafdccd69"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"50", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "1"], 
+   RowBox[{"\[Pi]", "*", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"\[Sqrt]", 
+        RowBox[{"(", "y", ")"}]}], "-", "2"}], ")"}], "2"], "*", 
+    RowBox[{"(", 
+     RowBox[{"4", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7193082927845*^9, 3.719308455718115*^9}, {
+  3.719308538853902*^9, 
+  3.7193085393725557`*^9}},ExpressionUUID->"a894bbb1-b3a4-4457-abe3-\
+8d7db8528f23"],
+
+Cell[BoxData[
+ RowBox[{"330", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{{3.719308412057592*^9, 3.7193084567935143`*^9}, 
+   3.719308540635518*^9},ExpressionUUID->"00ef7b74-71f3-4cff-83d2-\
+d6f6c7597a3e"]
+}, Open  ]],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{
+  Inherited, 3},ExpressionUUID->"3fcea2b7-9af0-43c5-a22b-7bcf58cd5355"],
+
+Cell[TextData[{
+ StyleBox["Example 8.2.6:",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ "\n* tank is completely full.\n* liquid is between a = -4 and b = 0\n* must \
+pump liquid to 2 ft above ground (2 ft above tank rim at 0), and tank is 3 ft \
+below ground. \n\n",
+ StyleBox["Here tank is centered at (0,0) so ground level is at (0,3) and \
+must pump to level (0,5). The D(y) = 5 - y because ...\n-> must pump 5 ft \
+above tank rim so 5 - y distance left, ",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["after the distance = y in full tank is covered. ",
+  FontColor->RGBColor[0.5, 0, 0.5],
+  Background->RGBColor[1, 0.9, 0.8]]
+}], "Text",
+ CellChangeTimes->{{3.719561798892251*^9, 3.7195618518736467`*^9}, {
+  3.7196493030252867`*^9, 3.7196493073282757`*^9}, {3.719649388023119*^9, 
+  3.719649396098983*^9}, {3.7196503820861073`*^9, 3.7196504061263847`*^9}, {
+  3.719650922335194*^9, 
+  3.71965096902135*^9}},ExpressionUUID->"ed101484-48ff-4073-884d-\
+f6b59c3c790b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"60", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", 
+    RowBox[{"-", "4"}], "0"], 
+   RowBox[{"16", "*", 
+    RowBox[{"\[Sqrt]", 
+     RowBox[{"(", 
+      RowBox[{"16", "-", 
+       SuperscriptBox["y", "2"]}], ")"}]}], "*", 
+    RowBox[{"(", 
+     RowBox[{"2", "-", 
+      RowBox[{"(", 
+       RowBox[{"-", "3"}], ")"}], "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.719561856851403*^9, 3.719561886881987*^9}, {
+  3.719561923011348*^9, 3.719561933956237*^9}, {3.719561992363092*^9, 
+  3.71956200468161*^9}, {3.7195621132991467`*^9, 3.71956211348943*^9}, {
+  3.719649367065702*^9, 3.719649373361006*^9}, {3.719649792608984*^9, 
+  3.719649792735421*^9}, {3.719649825737034*^9, 3.719649835546493*^9}, {
+  3.7196499438654413`*^9, 3.719649943951071*^9}, {3.719650304911477*^9, 
+  3.7196503049975224`*^9}},ExpressionUUID->"06e0c043-1df0-46f5-b511-\
+27d46547c5a0"],
+
+Cell[BoxData[
+ RowBox[{"1280", " ", 
+  RowBox[{"(", 
+   RowBox[{"16", "+", 
+    RowBox[{"15", " ", "\[Pi]"}]}], ")"}]}]], "Output",
+ CellChangeTimes->{
+  3.719561935983708*^9, {3.719561995354847*^9, 3.719562005961214*^9}, 
+   3.719562114861476*^9, 3.7196493839027977`*^9, 3.719649793975501*^9, {
+   3.7196498274207983`*^9, 3.71964983732934*^9}, 3.719649945008348*^9, 
+   3.719650119039177*^9, 
+   3.719650306226562*^9},ExpressionUUID->"2a80e9cb-5b32-4c56-ba97-\
+5a2aff5867b5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", "//", "N"}]], "Input",
+ CellChangeTimes->{{3.719649949584453*^9, 
+  3.719649951006616*^9}},ExpressionUUID->"4730ff12-1ff2-406c-95c2-\
+8ca3dd884754"],
+
+Cell[BoxData["80798.57894892403`"], "Output",
+ CellChangeTimes->{3.719649951288849*^9, 
+  3.719650307803543*^9},ExpressionUUID->"11e7d1b6-c1f7-42e9-b289-\
+7827b3d18112"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Another way to do it, with tank centered at (0, -3)  (MEANING: tank is 3 ft \
+below ground at (0,0) and we must pump to the level of (0,2))\n",
+ StyleBox["Here: D(y) = 2 + (0-y) because ...",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["\n-> must pump distance of 0 - y to reach tank rim\n-> then we \
+have distance of 2 ft left that is ABOVE ground. ",
+  FontColor->RGBColor[0, 0, 1]]
+}], "Text",
+ CellChangeTimes->{{3.719650341541699*^9, 3.7196503757177753`*^9}, {
+  3.719650410077228*^9, 3.719650418737661*^9}, {3.719650756205676*^9, 
+  3.719650808626087*^9}, {3.719650886901351*^9, 
+  3.719650887453219*^9}},ExpressionUUID->"83542db7-5c0d-4846-8226-\
+da05c38472c1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"60", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", 
+    RowBox[{"-", "7"}], 
+    RowBox[{"-", "3"}]], 
+   RowBox[{"16", "*", 
+    RowBox[{"\[Sqrt]", 
+     RowBox[{"(", 
+      RowBox[{"16", "-", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"y", "+", "3"}], ")"}], "2"]}], ")"}]}], "*", 
+    RowBox[{"(", 
+     RowBox[{"2", "+", 
+      RowBox[{"(", 
+       RowBox[{"0", "-", "y"}], ")"}]}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.719649907088084*^9, 3.719649925911537*^9}, {
+  3.719650171880748*^9, 3.719650184542822*^9}, {3.719650732751932*^9, 
+  3.7196507472165613`*^9}},ExpressionUUID->"efe33a5f-b66a-41ac-a414-\
+280809cdf936"],
+
+Cell[BoxData[
+ RowBox[{"1280", " ", 
+  RowBox[{"(", 
+   RowBox[{"16", "+", 
+    RowBox[{"15", " ", "\[Pi]"}]}], ")"}]}]], "Output",
+ CellChangeTimes->{
+  3.719649929017131*^9, {3.7196501769905243`*^9, 3.719650186608118*^9}, 
+   3.7196507497871857`*^9},ExpressionUUID->"0003faa1-1b67-49d9-bb84-\
+da432572dfae"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", "//", "N"}]], "Input",
+ CellChangeTimes->{{3.719649935296178*^9, 
+  3.71964993603094*^9}},ExpressionUUID->"6b4b2302-0c97-49a0-bf6f-\
+4ae904f3a29c"],
+
+Cell[BoxData["80798.57894892403`"], "Output",
+ CellChangeTimes->{
+  3.7196499370718803`*^9, {3.719650179686263*^9, 3.719650188185939*^9}, 
+   3.7196508824441032`*^9},ExpressionUUID->"406ad0b1-383e-4ed7-bcd4-\
+8ef247441ee1"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["You Try It 8.4:",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ "\n* tank is completely full. \n* liquid is between a = 0 and b = 4\n* tank \
+is 3 ft below ground and lies curved side up (so its topmost point or rim is \
+at (0,4) point. The ground level is at (0,7). )\n* must pump liquid to 2 ft \
+above ground so to level of (0,9)"
+}], "Text",
+ CellChangeTimes->{{3.719307506928199*^9, 3.719307509777315*^9}, {
+  3.719307588855893*^9, 3.7193076084503613`*^9}, {3.7193076470168943`*^9, 
+  3.719307648952273*^9}, {3.719307708849009*^9, 3.719307726329239*^9}, {
+  3.719307980942438*^9, 3.71930798411865*^9}, {3.719308267991088*^9, 
+  3.7193082858221283`*^9}, {3.719308515116885*^9, 3.719308525770459*^9}, {
+  3.719308700467671*^9, 3.7193087172681217`*^9}, {3.719561676793912*^9, 
+  3.719561684470975*^9}, {3.7196510570859203`*^9, 
+  3.7196511843391314`*^9}},ExpressionUUID->"d4a6669a-5a14-4332-a8c3-\
+6e16198ce151"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"60", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "4"], 
+   RowBox[{"16", "*", 
+    RowBox[{"\[Sqrt]", 
+     RowBox[{"(", 
+      RowBox[{"16", "-", 
+       SuperscriptBox["y", "2"]}], ")"}]}], "*", 
+    RowBox[{"(", 
+     RowBox[{"9", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7193082927845*^9, 3.719308455718115*^9}, {
+  3.719308538853902*^9, 3.7193085393725557`*^9}, {3.7196511875246468`*^9, 
+  3.71965119285925*^9}, {3.7196512589711647`*^9, 
+  3.719651268212985*^9}},ExpressionUUID->"2562938d-a70d-4b20-af48-\
+70700bfb4ef5"],
+
+Cell[BoxData[
+ RowBox[{"1280", " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "16"}], "+", 
+    RowBox[{"27", " ", "\[Pi]"}]}], ")"}]}]], "Output",
+ CellChangeTimes->{{3.719308412057592*^9, 3.7193084567935143`*^9}, 
+   3.719308540635518*^9, 
+   3.719651270241132*^9},ExpressionUUID->"7f0bb3d2-8191-4b77-bcca-\
+85759ab6bf19"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", "//", "N"}]], "Input",
+ CellChangeTimes->{{3.7196512793410997`*^9, 
+  3.719651280572914*^9}},ExpressionUUID->"df342786-4865-4c0d-a839-\
+1a7c880785d4"],
+
+Cell[BoxData["88093.44210806325`"], "Output",
+ CellChangeTimes->{
+  3.719651281078288*^9},ExpressionUUID->"b83a680e-6600-47e2-ad1d-\
+78ea7537b2a4"]
+}, Open  ]],
+
+Cell[TextData[StyleBox["Correct answer: HELP",
+ FontWeight->"Bold",
+ FontColor->RGBColor[1, 0, 0]]], "Text",
+ CellChangeTimes->{{3.719652739630712*^9, 
+  3.719652747047388*^9}},ExpressionUUID->"af7ac3c8-76c3-4dd0-918f-\
+617a6081a59d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"28800", "\[Pi]"}], "-", 
+   FractionBox["51200", "3"]}], "//", "N"}]], "Input",
+ CellChangeTimes->{{3.719651287703224*^9, 
+  3.719651308228668*^9}},ExpressionUUID->"ce77d975-2a3c-4cdd-a2e4-\
+50dfe3a13851"],
+
+Cell[BoxData["73411.20175671937`"], "Output",
+ CellChangeTimes->{
+  3.71965130871847*^9},ExpressionUUID->"de24630e-5c86-415b-aa08-b9c39a2999ba"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["You Try It 8.5: \n",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ "* tank is a cone formed by rotating the wedge between (2,0) and (4,4) about \
+the y-axis. \n* tank is completely filled with sludge (density 80 ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"lbs", "/", 
+     SuperscriptBox["ft", "3"]}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "af8f464d-206b-446c-a2e3-9ae7ff4eadfd"],
+ " between a = 0 and b = 4.\n* sludge is pumped 3 ft upwards into tank truck \
+so D(y) = 7 - y"
+}], "Text",
+ CellChangeTimes->{{3.719652764150569*^9, 3.719652785727675*^9}, {
+  3.7196529370225077`*^9, 
+  3.7196530009590607`*^9}},ExpressionUUID->"3f8da779-eb61-41eb-861c-\
+1e038e12f19a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"80", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "4"], 
+   RowBox[{"\[Pi]", "*", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["y", "2"], "+", "2"}], ")"}], "2"], "*", 
+    RowBox[{"(", 
+     RowBox[{"7", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.719653003545486*^9, 
+  3.719653039068221*^9}},ExpressionUUID->"8b5dab1f-c444-482e-916f-\
+403ebac341f1"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"40960", " ", "\[Pi]"}], "3"]], "Output",
+ CellChangeTimes->{
+  3.719653040156823*^9},ExpressionUUID->"e0bf334d-a8c3-49ec-9837-\
+60e2509c83c8"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["You Try It 8.6: \n",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ "* tank is a cone formed by rotating the wedge between (0,4) and (2,0) about \
+the line x= 4.\n* tank is completely filled with sludge (density 80 ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"lbs", "/", 
+     SuperscriptBox["ft", "3"]}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "ba42ab10-de42-4f78-abe6-0dd750e11e22"],
+ " between a = 0 and b = 4.\n* sludge is pumped 3 ft upwards into tank truck \
+so D(y) = 7 - y\n\nNOTE: cross-sectional area A(y) = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Pi]", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"4", "-", "x"}], ")"}], "2"]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "49b3963b-0519-41e6-973e-c5fcbd99895c"],
+ ", where y = -2x+4\nA(y) = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Pi]", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"4", "-", 
+        RowBox[{"(", 
+         RowBox[{"2", "-", 
+          FractionBox["y", "2"]}], ")"}]}], ")"}], "2"]}], "=", 
+    SuperscriptBox[
+     RowBox[{"\[Pi]", "(", 
+      RowBox[{"2", "+", 
+       FractionBox["y", "2"]}], ")"}], "2"]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "3083fae9-c4c3-4154-8fd0-802839e0c525"]
+}], "Text",
+ CellChangeTimes->{{3.719652764150569*^9, 3.719652785727675*^9}, {
+  3.7196529370225077`*^9, 3.7196530009590607`*^9}, {3.719653215062275*^9, 
+  3.719653232830637*^9}, {3.719653337575102*^9, 
+  3.719653422730467*^9}},ExpressionUUID->"679548a4-2d54-4328-aba5-\
+98fcba59c7c2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"80", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "4"], 
+   RowBox[{"\[Pi]", "*", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"4", "-", 
+       RowBox[{"(", 
+        RowBox[{"2", "-", 
+         FractionBox["y", "2"]}], ")"}]}], ")"}], "2"], "*", 
+    RowBox[{"(", 
+     RowBox[{"7", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.719653003545486*^9, 3.719653039068221*^9}, {
+  3.719653246862604*^9, 3.719653249670494*^9}, {3.7196534367858963`*^9, 
+  3.7196534599341393`*^9}},ExpressionUUID->"0ed47149-aa8d-4f7f-8148-\
+ad8948ad1bec"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"40960", " ", "\[Pi]"}], "3"]], "Output",
+ CellChangeTimes->{3.719653040156823*^9, 3.719653250786564*^9, 
+  3.719653461630316*^9},ExpressionUUID->"8d5462f7-b56f-49f8-983b-\
+d61f5b8cdad4"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["You Try It 8.7: \n",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ "* tank is a triangular trough with triangles 2 ft high and 3 ft base, 8 ft \
+long. \n* tank is completely full. \n* liquid is between a = 0 and b = 2\n* \
+must pump just the top foot of the water (so we must remove the bit that lies \
+between a = 1 and b = 2). "
+}], "Text",
+ CellChangeTimes->{{3.7196535512480783`*^9, 3.719653594630384*^9}, {
+  3.719653635398807*^9, 3.719653655280583*^9}, {3.719654082020692*^9, 
+  3.719654103025072*^9}},ExpressionUUID->"d70d0e71-32a7-4c34-af1d-\
+e8a3f3b8f87c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"62.5", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "1", "2"], 
+   RowBox[{"12", "y", 
+    RowBox[{"(", 
+     RowBox[{"2", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7196536606391706`*^9, 3.719653673284993*^9}, {
+  3.719653767853656*^9, 3.719653782633185*^9}, {3.71965381634341*^9, 
+  3.719653820270417*^9}, {3.719654105734027*^9, 
+  3.719654105795928*^9}},ExpressionUUID->"3d9b92a0-b85b-470a-912a-\
+e6175da71544"],
+
+Cell[BoxData["500.`"], "Output",
+ CellChangeTimes->{
+  3.719653783730681*^9, {3.719653817281684*^9, 3.7196538206211777`*^9}, 
+   3.7196541064111977`*^9},ExpressionUUID->"02ae1d2d-6308-4ef6-b8bd-\
+f45833b27805"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "Section",ExpressionUUID->"6ab6f729-81b5-454e-aefc-b3f05daf3f1a"],
+
+Cell[TextData[{
+ StyleBox["You Try It 8.8: \n(a)\n",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ "* tank is a cup  made by rotating y = ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "3"], TraditionalForm]],ExpressionUUID->
+  "0c7f1186-04cf-4f19-a6b3-06cdddb44b2f"],
+ " between ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"0", "\[LessEqual]", "x", "\[LessEqual]", "2"}], TraditionalForm]],
+  ExpressionUUID->"47218462-50db-4c2d-82a5-79c586dc3af9"],
+ " around the y-axis\n* tank is completely full. \n* liquid is between a = 0 \
+and b = 8\n* must pump all the water over the top, where the height H = 8"
+}], "Text",
+ CellChangeTimes->{{3.7196535512480783`*^9, 3.719653594630384*^9}, {
+  3.719653635398807*^9, 3.719653655280583*^9}, {3.719654082020692*^9, 
+  3.719654103025072*^9}, {3.7196542126121407`*^9, 3.719654267356134*^9}, {
+  3.7196620947198677`*^9, 
+  3.7196620960406227`*^9}},ExpressionUUID->"6dfb4a3f-eab1-4658-970c-\
+7e85fe2589bc"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["125", "2"], 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "8"], 
+   RowBox[{"\[Pi]", "*", 
+    SuperscriptBox["y", 
+     FractionBox["2", "3"]], "*", 
+    RowBox[{"(", 
+     RowBox[{"8", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7196536606391706`*^9, 3.719653673284993*^9}, {
+  3.719653767853656*^9, 3.719653782633185*^9}, {3.71965381634341*^9, 
+  3.719653820270417*^9}, {3.719654105734027*^9, 3.719654105795928*^9}, {
+  3.719654272188344*^9, 3.719654327637059*^9}, {3.7196543945026073`*^9, 
+  3.719654398659638*^9}},ExpressionUUID->"013c1c5f-8cbe-4afc-805f-\
+f60a9e065d4f"],
+
+Cell[BoxData[
+ RowBox[{"3600", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{
+  3.719653783730681*^9, {3.719653817281684*^9, 3.7196538206211777`*^9}, 
+   3.7196541064111977`*^9, {3.719654301730887*^9, 3.719654329755053*^9}, 
+   3.719654399569491*^9},ExpressionUUID->"bd65e123-cb00-4a06-be78-\
+cba66690f4e1"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["You Try It 8.8: \n(b)\n",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ "* tank is a cup  made by rotating y = ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "3"], TraditionalForm]],ExpressionUUID->
+  "13947969-1353-4943-9399-479599cd273a"],
+ " between ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"0", "\[LessEqual]", "x", "\[LessEqual]", "2"}], TraditionalForm]],
+  ExpressionUUID->"19804583-2f43-4049-adcb-182c970015f5"],
+ " around the y-axis\n* tank is completely full. \n* liquid is between a = 0 \
+and b = 8\n* must pump all the water over the top to 2 ft above tank\
+\[CloseCurlyQuote]s rim, so  the height H = 10"
+}], "Text",
+ CellChangeTimes->{{3.7196535512480783`*^9, 3.719653594630384*^9}, {
+  3.719653635398807*^9, 3.719653655280583*^9}, {3.719654082020692*^9, 
+  3.719654103025072*^9}, {3.7196542126121407`*^9, 3.719654267356134*^9}, {
+  3.7196620947198677`*^9, 3.71966211958739*^9}, {3.719662153416225*^9, 
+  3.719662163092534*^9}},ExpressionUUID->"45883f0c-7e5e-4189-a649-\
+d2b201a1fd80"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["125", "2"], 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "8"], 
+   RowBox[{"\[Pi]", "*", 
+    SuperscriptBox["y", 
+     FractionBox["2", "3"]], "*", 
+    RowBox[{"(", 
+     RowBox[{"10", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7196536606391706`*^9, 3.719653673284993*^9}, {
+  3.719653767853656*^9, 3.719653782633185*^9}, {3.71965381634341*^9, 
+  3.719653820270417*^9}, {3.719654105734027*^9, 3.719654105795928*^9}, {
+  3.719654272188344*^9, 3.719654327637059*^9}, {3.7196543945026073`*^9, 
+  3.719654398659638*^9}, {3.7196621668807917`*^9, 
+  3.719662167192794*^9}},ExpressionUUID->"47858584-e016-4bc9-b398-\
+bbd5e9a5429b"],
+
+Cell[BoxData[
+ RowBox[{"6000", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{
+  3.719653783730681*^9, {3.719653817281684*^9, 3.7196538206211777`*^9}, 
+   3.7196541064111977`*^9, {3.719654301730887*^9, 3.719654329755053*^9}, 
+   3.719654399569491*^9, 
+   3.719662169034099*^9},ExpressionUUID->"df14e4e2-6ddd-4657-ae11-\
+5d8163222065"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["You Try It 8.8: \n(c)\n",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ "* tank is a cup  made by rotating y = ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "3"], TraditionalForm]],ExpressionUUID->
+  "e1219d50-2397-43c6-b788-7a0a1df57525"],
+ " between ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"0", "\[LessEqual]", "x", "\[LessEqual]", "2"}], TraditionalForm]],
+  ExpressionUUID->"c7455ae8-8261-4ffd-9720-3b6354d4e178"],
+ " around the y-axis\n* tank has only 1 foot of liquid.\n* liquid is between \
+a = 0 and b = 1\n* must pump all the liquid to the tank\[CloseCurlyQuote]s \
+rim, so  the height H = 8"
+}], "Text",
+ CellChangeTimes->{{3.7196535512480783`*^9, 3.719653594630384*^9}, {
+  3.719653635398807*^9, 3.719653655280583*^9}, {3.719654082020692*^9, 
+  3.719654103025072*^9}, {3.7196542126121407`*^9, 3.719654267356134*^9}, {
+  3.7196620947198677`*^9, 3.71966211958739*^9}, {3.719662153416225*^9, 
+  3.719662163092534*^9}, {3.7196622750958776`*^9, 
+  3.719662337601478*^9}},ExpressionUUID->"4b5878f8-8b12-4e2a-b071-\
+a6384b940bae"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["125", "2"], 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "1"], 
+   RowBox[{"\[Pi]", "*", 
+    SuperscriptBox["y", 
+     FractionBox["2", "3"]], "*", 
+    RowBox[{"(", 
+     RowBox[{"8", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7196536606391706`*^9, 3.719653673284993*^9}, {
+  3.719653767853656*^9, 3.719653782633185*^9}, {3.71965381634341*^9, 
+  3.719653820270417*^9}, {3.719654105734027*^9, 3.719654105795928*^9}, {
+  3.719654272188344*^9, 3.719654327637059*^9}, {3.7196543945026073`*^9, 
+  3.719654398659638*^9}, {3.7196621668807917`*^9, 3.719662167192794*^9}, {
+  3.719662323399706*^9, 
+  3.719662341037243*^9}},ExpressionUUID->"116e96d3-3d4d-44aa-a5e0-\
+53113d031251"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"4425", " ", "\[Pi]"}], "16"]], "Output",
+ CellChangeTimes->{
+  3.719653783730681*^9, {3.719653817281684*^9, 3.7196538206211777`*^9}, 
+   3.7196541064111977`*^9, {3.719654301730887*^9, 3.719654329755053*^9}, 
+   3.719654399569491*^9, 3.719662169034099*^9, 
+   3.719662344101449*^9},ExpressionUUID->"746a4fa3-a083-4240-b8ee-\
+9ef5a16da036"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "Section",
+ CellChangeTimes->{{3.719662354973216*^9, 
+  3.719662362961536*^9}},ExpressionUUID->"22ddef7e-f8ce-4eb8-835e-\
+b9427db959e9"],
+
+Cell[TextData[{
+ StyleBox["You Try It 8.9: \n(a)\n",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ "* tank is a cone with 10 ft radius and 15 ft depth.\n* tank has only 9 ft \
+of liquid.\n* liquid is between a = 0 and b = 9\n* must pump all the liquid \
+to the tank\[CloseCurlyQuote]s rim, so  the height H = 15"
+}], "Text",
+ CellChangeTimes->{{3.7196535512480783`*^9, 3.719653594630384*^9}, {
+  3.719653635398807*^9, 3.719653655280583*^9}, {3.719654082020692*^9, 
+  3.719654103025072*^9}, {3.7196542126121407`*^9, 3.719654267356134*^9}, {
+  3.7196620947198677`*^9, 3.71966211958739*^9}, {3.719662153416225*^9, 
+  3.719662163092534*^9}, {3.7196622750958776`*^9, 3.719662337601478*^9}, {
+  3.719662373159178*^9, 3.7196623759872513`*^9}, {3.7196624936967993`*^9, 
+  3.719662519670526*^9}},ExpressionUUID->"050b91ba-ddbd-4707-ab0a-\
+df1fc9e6e179"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"54", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "9"], 
+   RowBox[{"\[Pi]", "*", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["2", "3"], "*", "y"}], ")"}], "2"], "*", 
+    RowBox[{"(", 
+     RowBox[{"15", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7196536606391706`*^9, 3.719653673284993*^9}, {
+  3.719653767853656*^9, 3.719653782633185*^9}, {3.71965381634341*^9, 
+  3.719653820270417*^9}, {3.719654105734027*^9, 3.719654105795928*^9}, {
+  3.719654272188344*^9, 3.719654327637059*^9}, {3.7196543945026073`*^9, 
+  3.719654398659638*^9}, {3.7196621668807917`*^9, 3.719662167192794*^9}, {
+  3.719662323399706*^9, 3.719662341037243*^9}, {3.719662524447543*^9, 
+  3.7196625571033583`*^9}},ExpressionUUID->"7208011c-f985-4c78-a5c3-\
+a344a174669f"],
+
+Cell[BoxData[
+ RowBox[{"48114", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{
+  3.719653783730681*^9, {3.719653817281684*^9, 3.7196538206211777`*^9}, 
+   3.7196541064111977`*^9, {3.719654301730887*^9, 3.719654329755053*^9}, 
+   3.719654399569491*^9, 3.719662169034099*^9, 3.719662344101449*^9, 
+   3.719662557637465*^9},ExpressionUUID->"62971ce3-f7fb-4785-b4d8-\
+d0ff03b57698"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["You Try It 8.9: \n(b)\n",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ "* now reservoir is full, so limits of integration are a= 0 to b = 15"
+}], "Text",
+ CellChangeTimes->{{3.7196535512480783`*^9, 3.719653594630384*^9}, {
+  3.719653635398807*^9, 3.719653655280583*^9}, {3.719654082020692*^9, 
+  3.719654103025072*^9}, {3.7196542126121407`*^9, 3.719654267356134*^9}, {
+  3.7196620947198677`*^9, 3.71966211958739*^9}, {3.719662153416225*^9, 
+  3.719662163092534*^9}, {3.7196622750958776`*^9, 3.719662337601478*^9}, {
+  3.719662373159178*^9, 3.7196623759872513`*^9}, {3.7196624936967993`*^9, 
+  3.719662519670526*^9}, {3.7196626790862293`*^9, 
+  3.719662698181758*^9}},ExpressionUUID->"733a561d-c611-4371-9fcc-\
+594f458b36e2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"54", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "15"], 
+   RowBox[{"\[Pi]", "*", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["2", "3"], "*", "y"}], ")"}], "2"], "*", 
+    RowBox[{"(", 
+     RowBox[{"15", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7196536606391706`*^9, 3.719653673284993*^9}, {
+  3.719653767853656*^9, 3.719653782633185*^9}, {3.71965381634341*^9, 
+  3.719653820270417*^9}, {3.719654105734027*^9, 3.719654105795928*^9}, {
+  3.719654272188344*^9, 3.719654327637059*^9}, {3.7196543945026073`*^9, 
+  3.719654398659638*^9}, {3.7196621668807917`*^9, 3.719662167192794*^9}, {
+  3.719662323399706*^9, 3.719662341037243*^9}, {3.719662524447543*^9, 
+  3.7196625571033583`*^9}, {3.7196627007186127`*^9, 
+  3.719662701398597*^9}},ExpressionUUID->"f2e42e93-d821-4549-b027-\
+c24d032fad81"],
+
+Cell[BoxData[
+ RowBox[{"101250", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{
+  3.719653783730681*^9, {3.719653817281684*^9, 3.7196538206211777`*^9}, 
+   3.7196541064111977`*^9, {3.719654301730887*^9, 3.719654329755053*^9}, 
+   3.719654399569491*^9, 3.719662169034099*^9, 3.719662344101449*^9, 
+   3.719662557637465*^9, 
+   3.719662702419492*^9},ExpressionUUID->"7a2e01c1-9dcc-4c9d-b0cd-\
+f5cd6ca48578"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "Section",ExpressionUUID->"c097a688-dc0b-422f-8ad0-373176e02b17"],
+
+Cell[TextData[{
+ StyleBox["PROBLEMS:\n\n",
+  FontWeight->"Bold",
+  FontVariations->{"Underline"->True}],
+ StyleBox["[2]\n\n",
+  FontWeight->"Bold"],
+ "* region R formed by y = 4 - ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "2"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "b94acdcc-2a95-4572-b211-905bc113d3d4"],
+ " is rotated around y-axis to make a tank\n* tank is filled with wheat (100 ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["lbs", 
+     SuperscriptBox["ft", "3"]], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "6c749b5b-9734-449d-a6f5-52b9d1e058fc"],
+ ". \n* the limits of integration are from a = 0 and b = 4.\n* raise wheat to \
+the tank rim"
+}], "Text",
+ CellChangeTimes->{{3.7196535512480783`*^9, 3.719653594630384*^9}, {
+  3.719653635398807*^9, 3.719653655280583*^9}, {3.719654082020692*^9, 
+  3.719654103025072*^9}, {3.7196542126121407`*^9, 3.719654267356134*^9}, {
+  3.7196620947198677`*^9, 3.71966211958739*^9}, {3.719662153416225*^9, 
+  3.719662163092534*^9}, {3.7196622750958776`*^9, 3.719662337601478*^9}, {
+  3.719662373159178*^9, 3.7196623759872513`*^9}, {3.7196624936967993`*^9, 
+  3.719662519670526*^9}, {3.719662718894959*^9, 3.719662723173843*^9}, {
+  3.719662831734129*^9, 3.719662921230143*^9}, {3.719662968986352*^9, 
+  3.7196629711872*^9}},ExpressionUUID->"2f72ac17-a097-4057-b56c-cc86f2309984"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"100", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "4"], 
+   RowBox[{"\[Pi]", "*", 
+    RowBox[{"(", 
+     RowBox[{"4", "-", "y"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"4", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7196536606391706`*^9, 3.719653673284993*^9}, {
+  3.719653767853656*^9, 3.719653782633185*^9}, {3.71965381634341*^9, 
+  3.719653820270417*^9}, {3.719654105734027*^9, 3.719654105795928*^9}, {
+  3.719654272188344*^9, 3.719654327637059*^9}, {3.7196543945026073`*^9, 
+  3.719654398659638*^9}, {3.7196621668807917`*^9, 3.719662167192794*^9}, {
+  3.719662323399706*^9, 3.719662341037243*^9}, {3.719662524447543*^9, 
+  3.7196625571033583`*^9}, {3.7196629766236963`*^9, 
+  3.719662992709509*^9}},ExpressionUUID->"6b395ef6-19b9-4039-a51a-\
+4d97a2144201"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"6400", " ", "\[Pi]"}], "3"]], "Output",
+ CellChangeTimes->{
+  3.719653783730681*^9, {3.719653817281684*^9, 3.7196538206211777`*^9}, 
+   3.7196541064111977`*^9, {3.719654301730887*^9, 3.719654329755053*^9}, 
+   3.719654399569491*^9, 3.719662169034099*^9, 3.719662344101449*^9, 
+   3.719662557637465*^9, 
+   3.719662994228916*^9},ExpressionUUID->"f2c1ba93-083e-4442-aff7-\
+0a11d080e082"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["98", "10"], "*", "1000", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", 
+    RowBox[{"-", "10"}], 
+    RowBox[{"-", "2"}]], 
+   RowBox[{"\[Pi]", "*", 
+    FractionBox["4", "25"], "*", 
+    SuperscriptBox["y", "2"], "*", 
+    RowBox[{"(", 
+     RowBox[{"0", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.719742482830059*^9, 3.719742537372414*^9}, {
+  3.7197426481410007`*^9, 3.719742649131031*^9}, {3.71974269315606*^9, 
+  3.719742695794923*^9}},ExpressionUUID->"badf0ba1-2f55-46a9-ae8d-\
+76e127082f19"],
+
+Cell[BoxData[
+ RowBox[{"3913728", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{3.719742537802806*^9, 3.719742649645256*^9, 
+  3.719742696256424*^9},ExpressionUUID->"26d849a9-1fde-485d-b525-\
+a664ab2389bd"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "Section",ExpressionUUID->"97ae6e81-bdec-4707-b105-5853c3fb8531"],
+
+Cell[TextData[{
+ StyleBox["[3]\n\n",
+  FontWeight->"Bold"],
+ "* region R formed by y = ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "2"], TraditionalForm]],ExpressionUUID->
+  "5b6c7f24-312d-461a-a782-7740db5a89d9"],
+ " and y=6-x is rotated around y-axis to make a tank\n* tank is filled with \
+honey (90 ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["lbs", 
+     SuperscriptBox["ft", "3"]], ")"}], TraditionalForm]],ExpressionUUID->
+  "8e745766-bcd2-4fc0-9f62-70ed65d3df2a"],
+ ". \n* raise honey to the tank rim\n\n",
+ StyleBox["TODO: correct answer is 2760\[Pi]???",
+  FontWeight->"Bold",
+  FontColor->RGBColor[1, 0, 1]]
+}], "Text",
+ CellChangeTimes->{{3.7196535512480783`*^9, 3.719653594630384*^9}, {
+  3.719653635398807*^9, 3.719653655280583*^9}, {3.719654082020692*^9, 
+  3.719654103025072*^9}, {3.7196542126121407`*^9, 3.719654267356134*^9}, {
+  3.7196620947198677`*^9, 3.71966211958739*^9}, {3.719662153416225*^9, 
+  3.719662163092534*^9}, {3.7196622750958776`*^9, 3.719662337601478*^9}, {
+  3.719662373159178*^9, 3.7196623759872513`*^9}, {3.7196624936967993`*^9, 
+  3.719662519670526*^9}, {3.719662718894959*^9, 3.719662723173843*^9}, {
+  3.719662831734129*^9, 3.719662921230143*^9}, {3.719662968986352*^9, 
+  3.7196629711872*^9}, {3.719663324493479*^9, 3.719663567039002*^9}, {
+  3.719663719439949*^9, 3.7196637311618013`*^9}, {3.719663997389783*^9, 
+  3.719663999660535*^9}, {3.719741628818571*^9, 3.7197416378547573`*^9}, {
+  3.719741812568694*^9, 3.719741813984317*^9}, {3.719741908106968*^9, 
+  3.719741925750896*^9}},ExpressionUUID->"70fe7013-080c-44f9-9ffb-\
+f8239ab257de"],
+
+Cell[TextData[{
+ StyleBox["SETUP: use equations y = 2-x and y = ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["x", "2"], "-", "4"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"52954979-f850-4e32-a567-275ecae3a368"],
+ StyleBox[" with  tank being full between a=-4 and b=2. \n\n",
+  FontWeight->"Bold"],
+ "* Work 1: in the cup shape formed by the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"y", "=", 
+    RowBox[{
+     SuperscriptBox["x", "2"], "-", "4"}]}], TraditionalForm]],
+  ExpressionUUID->"767fb363-268f-4c88-8f33-0e4c91c3bd47"],
+ ". ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"A", "(", "y", ")"}], "=", 
+    RowBox[{
+     SuperscriptBox["\[Pi]r", "2"], "=", 
+     RowBox[{"\[Pi]", "(", 
+      RowBox[{"y", "+", "4"}], ")"}]}]}], TraditionalForm]],ExpressionUUID->
+  "49b622eb-5406-461b-8c36-bb38319dfe66"],
+ "\n* limits are a = -4 to b = 0\n* D(y) = 0 - y since we raise honey to the \
+rim at (0,0)\n\n* Work 2: in the triangle pyramid shape formed by the y = 2-x\
+\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"A", "(", "y", ")"}], "=", 
+    RowBox[{
+     SuperscriptBox["\[Pi]r", "2"], "=", 
+     SuperscriptBox[
+      RowBox[{"\[Pi]", "(", 
+       RowBox[{"2", "-", "y"}], ")"}], "2"]}]}], TraditionalForm]],
+  ExpressionUUID->"5b48bafe-d5dc-43a6-86cd-c4c0102e031f"],
+ "\n* limits are from a = 0 to b = 2\n* D(y) = y-0 because tank is being \
+filled from the source at y = 0 (0,0) until the variable end height of ",
+ StyleBox["y",
+  FontWeight->"Bold"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.719741702532263*^9, 3.71974179338517*^9}, {
+  3.719741853945551*^9, 
+  3.7197418881329*^9}},ExpressionUUID->"4c4c757f-8dea-43aa-8464-1228c3c9e340"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["W", "1"], "=", 
+  RowBox[{"90", 
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", 
+     RowBox[{"-", "4"}], "0"], 
+    RowBox[{"\[Pi]", "*", 
+     RowBox[{"(", 
+      RowBox[{"y", "+", "4"}], ")"}], "*", 
+     RowBox[{"(", 
+      RowBox[{"0", "-", "y"}], ")"}], 
+     RowBox[{"\[DifferentialD]", "y"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7197403087295017`*^9, 3.7197403390174303`*^9}, {
+  3.719741382267949*^9, 3.719741382947113*^9}, {3.719741430946143*^9, 
+  3.719741431162424*^9}, {3.719741562780703*^9, 3.7197415807061*^9}, {
+  3.719824999121153*^9, 
+  3.719825008625661*^9}},ExpressionUUID->"59d890e4-35f9-4601-a092-\
+dd6378a08311"],
+
+Cell[BoxData[
+ RowBox[{"960", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{
+  3.719740339901876*^9, {3.719741564230865*^9, 3.719741581729534*^9}, 
+   3.719825009514956*^9},ExpressionUUID->"4e48f01b-c0f6-401e-9224-\
+20fe012e5055"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["W", "2"], "=", 
+  RowBox[{
+   RowBox[{"90", 
+    RowBox[{
+     SubsuperscriptBox["\[Integral]", "0", "2"], 
+     RowBox[{"\[Pi]", "*", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"2", "-", "y"}], ")"}], "2"], "*", 
+      RowBox[{"(", 
+       RowBox[{"y", "-", "0"}], ")"}], 
+      RowBox[{"\[DifferentialD]", "y"}]}]}]}], "+", 
+   RowBox[{"90", 
+    RowBox[{
+     SubsuperscriptBox["\[Integral]", "0", "2"], 
+     RowBox[{"\[Pi]", "*", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"2", "-", "y"}], ")"}], "2"], "*", 
+      RowBox[{"(", 
+       RowBox[{"2", "-", "y"}], ")"}], 
+      RowBox[{"\[DifferentialD]", "y"}]}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.719825012737298*^9, 3.719825014273301*^9}, {
+  3.7198251283238297`*^9, 
+  3.7198251578191137`*^9}},ExpressionUUID->"cdc0c0cb-803f-470f-ba5d-\
+0a93329a2b69"],
+
+Cell[BoxData[
+ RowBox[{"480", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{
+  3.719741584427479*^9, 3.719825014645*^9, {3.719825138712906*^9, 
+   3.719825158233224*^9}},ExpressionUUID->"03877a12-728e-41e3-a447-\
+a93449e61d6a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["W", "1"], "+", 
+  SubscriptBox["W", "2"]}]], "Input",
+ CellChangeTimes->{{3.71982501749918*^9, 3.719825021352221*^9}, {
+  3.719825151418438*^9, 
+  3.7198251614890537`*^9}},ExpressionUUID->"7003596b-669f-4b9b-a9d1-\
+1219829ce46d"],
+
+Cell[BoxData[
+ RowBox[{"1440", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{
+  3.719825021901784*^9, {3.719825145337037*^9, 
+   3.719825161885563*^9}},ExpressionUUID->"08cdacad-c643-48da-9558-\
+d52c75e0e934"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["",
+ FontWeight->"Bold",
+ FontVariations->{"Underline"->True}]], "Section",
+ CellChangeTimes->{{3.71974164732017*^9, 
+  3.719741661926793*^9}},ExpressionUUID->"9eb6ae5a-c4ea-4ccc-830a-\
+3078fb26b9eb"],
+
+Cell[TextData[{
+ StyleBox["SETUP: use equations y = 6-x and y = ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "2"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",ExpressionUUID->"88e21065-d33d-4ce9-bc07-3849c67d16f0"],
+ StyleBox[" with  tank being full between 0 and 6. ",
+  FontWeight->"Bold"],
+ "\n\n* Work 1: in the cup shape formed by the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"y", "=", 
+    SuperscriptBox["x", "2"]}], TraditionalForm]],ExpressionUUID->
+  "ade5d025-ac8e-4eaf-9bce-155291a4f9c2"],
+ ". ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"A", "(", "y", ")"}], "=", 
+    RowBox[{
+     SuperscriptBox["\[Pi]r", "2"], "=", "\[Pi]y"}]}], TraditionalForm]],
+  ExpressionUUID->"22390d04-80cf-42cb-89be-35b3a9d72e5a"],
+ " \n* limits are a = 0 to b = 4\n* D(y) = 4 - y since we raise honey to the \
+rim. \n\n* Work 2: in the triangle pyramid shape formed by the y = 6-x\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"A", "(", "y", ")"}], "=", 
+    RowBox[{
+     SuperscriptBox["\[Pi]r", "2"], "=", 
+     SuperscriptBox[
+      RowBox[{"\[Pi]", "(", 
+       RowBox[{"6", "-", "y"}], ")"}], "2"]}]}], TraditionalForm]],
+  ExpressionUUID->"db0dc120-8082-493a-8960-10956687ab6e"],
+ "\n* limits are from a = 4 to b = 6\n",
+ StyleBox["* D(y) = 6 - (y+4) because we start at level y+2 (finished off \
+from work 1) and we continue to height 6. ",
+  FontColor->RGBColor[1, 0, 0]],
+ "\n",
+ StyleBox["HELP incorrect",
+  FontWeight->"Bold",
+  FontColor->RGBColor[1, 0, 0]]
+}], "Text",
+ CellChangeTimes->{{3.719741642882*^9, 
+  3.719741692913623*^9}},ExpressionUUID->"b950020e-1470-4494-9cd3-\
+8985420a9d89"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["W", "1"], "=", 
+  RowBox[{"90", 
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", "0", "4"], 
+    RowBox[{"\[Pi]", "*", "y", "*", 
+     RowBox[{"(", 
+      RowBox[{"4", "-", "y"}], ")"}], 
+     RowBox[{"\[DifferentialD]", "y"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7196536606391706`*^9, 3.719653673284993*^9}, {
+   3.719653767853656*^9, 3.719653782633185*^9}, {3.71965381634341*^9, 
+   3.719653820270417*^9}, {3.719654105734027*^9, 3.719654105795928*^9}, {
+   3.719654272188344*^9, 3.719654327637059*^9}, {3.7196543945026073`*^9, 
+   3.719654398659638*^9}, {3.7196621668807917`*^9, 3.719662167192794*^9}, {
+   3.719662323399706*^9, 3.719662341037243*^9}, {3.719662524447543*^9, 
+   3.7196625571033583`*^9}, {3.7196629766236963`*^9, 3.719662992709509*^9}, {
+   3.719663575741832*^9, 3.7196636383618927`*^9}, {3.7196637346145353`*^9, 
+   3.719663745180605*^9}, {3.719663985037862*^9, 3.7196639903648367`*^9}, {
+   3.7197396801201687`*^9, 3.719739733477292*^9}, {3.719740006548317*^9, 
+   3.7197400186059523`*^9}, {3.719740371604073*^9, 3.719740414929512*^9}, {
+   3.719741510042759*^9, 3.7197415339303913`*^9}, {3.719741567964882*^9, 
+   3.719741594025091*^9}, {3.719821863725666*^9, 3.7198218672771263`*^9}, 
+   3.7198219323281803`*^9, {3.7198249044674253`*^9, 3.7198249048388643`*^9}, {
+   3.719824966691579*^9, 3.719824968578331*^9}, {3.719825031429736*^9, 
+   3.719825060275703*^9}},ExpressionUUID->"02416f71-fa1f-4f17-b0be-\
+8de121d97dbe"],
+
+Cell[BoxData[
+ RowBox[{"960", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{
+  3.719653783730681*^9, {3.719653817281684*^9, 3.7196538206211777`*^9}, 
+   3.7196541064111977`*^9, {3.719654301730887*^9, 3.719654329755053*^9}, 
+   3.719654399569491*^9, 3.719662169034099*^9, 3.719662344101449*^9, 
+   3.719662557637465*^9, 3.719662994228916*^9, 3.7196636399849577`*^9, 
+   3.719663745715434*^9, {3.7196639864871407`*^9, 3.7196639909247923`*^9}, {
+   3.719739729476948*^9, 3.719739734028754*^9}, {3.7197400091467524`*^9, 
+   3.7197400192781487`*^9}, {3.719740382449367*^9, 3.719740411314897*^9}, 
+   3.7197414777979603`*^9, {3.719741515157501*^9, 3.719741534543913*^9}, {
+   3.719741570110861*^9, 3.719741594648889*^9}, 3.719821868229545*^9, 
+   3.719821932656794*^9, 3.719824905387615*^9, 3.719824968962296*^9, {
+   3.7198250531138678`*^9, 
+   3.719825065154235*^9}},ExpressionUUID->"7a7a3df5-d661-4af0-a7b6-\
+fdc0c75f29c4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["W", "2"], "=", 
+  RowBox[{"90", 
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", "4", "6"], 
+    RowBox[{"\[Pi]", "*", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"6", "-", "y"}], ")"}], "2"], "*", 
+     RowBox[{"(", 
+      RowBox[{"y", "-", "4"}], ")"}], 
+     RowBox[{"\[DifferentialD]", "y"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.719821762366234*^9, 3.719821819478135*^9}, {
+   3.719821850671767*^9, 3.719821919615692*^9}, {3.719822046150154*^9, 
+   3.719822046644459*^9}, 3.719824887748911*^9, {3.719825034109634*^9, 
+   3.7198250397868853`*^9}, {3.7198251710989447`*^9, 3.719825190728704*^9}, {
+   3.7198253485475407`*^9, 3.719825390512382*^9}, {3.719825901543951*^9, 
+   3.719825917303835*^9}},ExpressionUUID->"168cd458-623c-4145-b3e5-\
+39b8f04565ef"],
+
+Cell[BoxData[
+ RowBox[{"120", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{{3.719825179151916*^9, 3.719825191106564*^9}, {
+  3.7198253580304537`*^9, 3.719825391348914*^9}, {3.71982590705294*^9, 
+  3.7198259176828413`*^9}},ExpressionUUID->"42a43f3c-ac83-478e-9ba3-\
+911df1a750a5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["W", "1"], "+", 
+  SubscriptBox["W", "2"]}]], "Input",
+ CellChangeTimes->{{3.719825044417482*^9, 
+  3.7198250465522633`*^9}},ExpressionUUID->"d6fd5953-041d-4cd0-b55e-\
+a583b2d58043"],
+
+Cell[BoxData[
+ RowBox[{"1080", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{
+  3.719825067963698*^9, 3.719825193886354*^9, 3.7198253940901003`*^9, {
+   3.719825910551671*^9, 
+   3.719825919531124*^9}},ExpressionUUID->"868caf08-7ac0-417f-8751-\
+7df6c2e1cc99"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "Section",ExpressionUUID->"1b886674-c2eb-4781-860c-a48d08c3f478"],
+
+Cell[TextData[{
+ StyleBox["[4]\n\n",
+  FontWeight->"Bold"],
+ "* tank is completely filled between a = -1 and b = 1\n* has spout until y = \
+",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["3", "2"], " "}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "aeca6e82-6295-4596-a585-0784bb052431"],
+ "at the top. \n* raise the liquid to the spout and over, so distance is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["3", "2"], "-", "y"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "516f6ec2-c7a3-4297-93e4-96f07054aea4"]
+}], "Text",
+ CellChangeTimes->{{3.7198225260655212`*^9, 3.719822533404216*^9}, {
+  3.719822721816904*^9, 
+  3.719822787557325*^9}},ExpressionUUID->"bf985e65-a952-48c4-846f-\
+c0861c4081d4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"60", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", 
+    RowBox[{"-", "1"}], "1"], 
+   RowBox[{"\[Pi]", "*", 
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      SuperscriptBox["y", "2"]}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      FractionBox["3", "2"], "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.719822687245779*^9, 
+  3.719822716035741*^9}},ExpressionUUID->"f209ae52-56c4-4155-85e9-\
+08decb7a32d0"],
+
+Cell[BoxData[
+ RowBox[{"120", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{
+  3.71982271657128*^9},ExpressionUUID->"191fed64-dd02-4432-913d-89663aa76fdd"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "Section",ExpressionUUID->"c0a550ee-b6fb-4bc6-894a-d5f1bcd6a771"],
+
+Cell[TextData[{
+ StyleBox["[5]\n\n(b)\n\n",
+  FontWeight->"Bold"],
+ "* tank is full of soil between a = -1 and b = 0\n* raise soil to the rim. "
+}], "Text",
+ CellChangeTimes->{{3.7198225260655212`*^9, 3.719822533404216*^9}, {
+  3.719822721816904*^9, 3.7198228368172197`*^9}, {3.719823190095497*^9, 
+  3.7198232070923557`*^9}},ExpressionUUID->"49cf6e91-5f9a-458c-8747-\
+0203ce3ba2f4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"50", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "1"], 
+   RowBox[{"\[Pi]", "*", "y", "*", 
+    RowBox[{"(", 
+     RowBox[{"1", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.719822687245779*^9, 3.719822716035741*^9}, {
+  3.719823211065033*^9, 3.7198232272636414`*^9}, {3.7198232762413073`*^9, 
+  3.7198232809223137`*^9}},ExpressionUUID->"6b4e448f-b344-4340-a110-\
+67c3e86103fa"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"25", " ", "\[Pi]"}], "3"]], "Output",
+ CellChangeTimes->{3.71982271657128*^9, 3.7198232278817368`*^9, 
+  3.71982328140553*^9},ExpressionUUID->"39bc66bb-1f64-4890-afb1-13174f33390f"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "Section",ExpressionUUID->"e9796d09-6242-49eb-b32d-612d690feeec"],
+
+Cell[TextData[{
+ StyleBox["[6]\n(a)\n",
+  FontWeight->"Bold"],
+ "* tank is completely filled between a = 8 and b = 10\n* lower the liquid \
+from height 10 to height 8 so distance is (-y) because the liquid is lowering \
+from 10 to 8 so part from 8 to arbitrary point above has distance (-y) and \
+above it is 2+y (the empty part that is increasing). "
+}], "Text",
+ CellChangeTimes->{{3.7198225260655212`*^9, 3.719822533404216*^9}, {
+  3.719822721816904*^9, 3.719822787557325*^9}, {3.7198233133914022`*^9, 
+  3.7198233135600443`*^9}, {3.7198238886379547`*^9, 3.719823910352256*^9}, {
+  3.719824016204852*^9, 3.719824016700986*^9}, {3.719824197515986*^9, 
+  3.71982423306878*^9}},ExpressionUUID->"58cb28cb-e8cb-438e-82fd-\
+6ad815a51fbe"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["125", "2"], 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "8", "10"], 
+   RowBox[{"\[Pi]", "*", 
+    RowBox[{"(", 
+     RowBox[{"20", "-", 
+      RowBox[{"2", "y"}]}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.719822687245779*^9, 3.719822716035741*^9}, {
+   3.719823473831951*^9, 3.719823517135107*^9}, {3.719823591161468*^9, 
+   3.719823617766687*^9}, {3.719823782983037*^9, 3.719823808471757*^9}, 
+   3.719823882278308*^9},ExpressionUUID->"0e8fff20-26f7-475f-b757-\
+cc226c869a75"],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{"6500", " ", "\[Pi]"}], "3"]}]], "Output",
+ CellChangeTimes->{
+  3.71982271657128*^9, 3.719823518702553*^9, {3.7198235920856133`*^9, 
+   3.719823618089418*^9}, {3.7198237864021597`*^9, 3.7198238086941833`*^9}, 
+   3.71982395972972*^9},ExpressionUUID->"76419ec9-2485-49c7-8e47-\
+5baf2c292bfe"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["[6]\n(b)\n",
+  FontWeight->"Bold"],
+ "* tank is completely filled between a = 8 and b = 10\n* lower the liquid \
+from height 10 to height 9 so distance is (-y) because the liquid is lowering \
+from 10 to 9 so the part from 9 to arbitrary point above has distance (-y) \
+because the upper level y is falling and above that the empty part is \
+increasing and has distance 1 + y. "
+}], "Text",
+ CellChangeTimes->{{3.7198225260655212`*^9, 3.719822533404216*^9}, {
+  3.719822721816904*^9, 3.719822787557325*^9}, {3.7198233133914022`*^9, 
+  3.7198233135600443`*^9}, {3.7198238886379547`*^9, 3.719823910352256*^9}, {
+  3.719824016204852*^9, 3.719824016700986*^9}, {3.7198241760441923`*^9, 
+  3.7198241952601633`*^9}, {3.71982423650036*^9, 
+  3.719824272997818*^9}},ExpressionUUID->"6b98ba22-7933-4125-9d95-\
+8d5fd7489215"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["125", "2"], 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "9", "10"], 
+   RowBox[{"\[Pi]", "*", 
+    RowBox[{"(", 
+     RowBox[{"20", "-", 
+      RowBox[{"2", "y"}]}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{
+  3.7198241692762213`*^9},ExpressionUUID->"1ab4175b-fa79-4efd-8cfd-\
+3cf505da5ff5"],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{"1750", " ", "\[Pi]"}], "3"]}]], "Output",
+ CellChangeTimes->{
+  3.7198241702033787`*^9},ExpressionUUID->"607a6853-b19e-4e6e-ae85-\
+1d920ae41421"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["[7] \n\n",
+  FontWeight->"Bold"],
+ "* conical tank has 1 foot of oil from a = -3 to b = -2\n* move it up to \
+height 0 because ground level is at y = 0. "
+}], "Text",
+ CellChangeTimes->{{3.7198225260655212`*^9, 3.719822533404216*^9}, {
+  3.719822721816904*^9, 3.719822787557325*^9}, {3.7198233133914022`*^9, 
+  3.7198233135600443`*^9}, {3.7198238886379547`*^9, 3.719823910352256*^9}, {
+  3.719824016204852*^9, 3.719824016700986*^9}, {3.719824291819742*^9, 
+  3.719824295651988*^9}, {3.719824541050561*^9, 
+  3.719824570530888*^9}},ExpressionUUID->"4ab61fc8-5df9-4285-88b3-\
+49c08684ce40"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"60", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", 
+    RowBox[{"-", "3"}], 
+    RowBox[{"-", "2"}]], 
+   RowBox[{"\[Pi]", "*", 
+    RowBox[{"(", 
+     RowBox[{"y", "+", "4"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"0", "-", "y"}], ")"}], 
+    RowBox[{"\[DifferentialD]", "y"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.719824508709988*^9, 
+  3.719824534130576*^9}},ExpressionUUID->"722b83c4-3e82-4b7b-946c-\
+15674bcbf089"],
+
+Cell[BoxData[
+ RowBox[{"220", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{
+  3.719824534547407*^9},ExpressionUUID->"2649a630-17d3-414e-bf18-\
+17422e624a79"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 645},
+WindowMargins->{{6, Automatic}, {23, Automatic}},
+FrontEndVersion->"11.2 for Linux x86 (64-bit) (September 10, 2017)",
+StyleDefinitions->"Dark_PurpleBlue_Link.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 180, 3, 36, "Text",ExpressionUUID->"51ac1a17-2fa9-4507-87fb-8bf00c1e4855"],
+Cell[741, 25, 331, 10, 6, "Text",ExpressionUUID->"e1d2312c-0214-4574-b814-bf97354c0a26"],
+Cell[1075, 37, 470, 10, 106, "Text",ExpressionUUID->"17c792ad-a08a-4261-8f35-616811a2ad17"],
+Cell[CellGroupData[{
+Cell[1570, 51, 363, 10, 71, "Input",ExpressionUUID->"edd87010-365d-4468-829f-3679ebb4b009"],
+Cell[1936, 63, 204, 5, 58, "Output",ExpressionUUID->"2d5b9328-7664-4160-86c1-df49deb57cc8"]
+}, Open  ]],
+Cell[2155, 71, 618, 14, 131, "Text",ExpressionUUID->"73ff7b20-5573-402d-8a43-4de46c9060b7"],
+Cell[CellGroupData[{
+Cell[2798, 89, 560, 15, 71, "Input",ExpressionUUID->"9a497ed1-51c2-49b8-8b71-07498d06f203"],
+Cell[3361, 106, 204, 5, 58, "Output",ExpressionUUID->"c8fd9c52-833f-4cba-bfc8-c62057103280"]
+}, Open  ]],
+Cell[3580, 114, 649, 15, 132, "Text",ExpressionUUID->"defca606-ad58-46ac-b741-efe6b591089e"],
+Cell[CellGroupData[{
+Cell[4254, 133, 465, 14, 71, "Input",ExpressionUUID->"593cea9e-814a-4dcf-a19d-d2d0f01c9adf"],
+Cell[4722, 149, 163, 4, 37, "Output",ExpressionUUID->"4c4aa7b5-9e99-46c7-b3f1-358fdd6d7925"]
+}, Open  ]],
+Cell[4900, 156, 331, 10, 6, "Text",ExpressionUUID->"89315449-6252-4dc2-8a5a-ebc717ff043f"],
+Cell[5234, 168, 661, 14, 132, "Text",ExpressionUUID->"17a2a098-9a3d-4f5a-ac4c-09d337973182"],
+Cell[CellGroupData[{
+Cell[5920, 186, 496, 15, 71, "Input",ExpressionUUID->"c51a5882-6a32-4489-98d9-c9c460d3f47c"],
+Cell[6419, 203, 206, 5, 58, "Output",ExpressionUUID->"e678f39b-d9ef-4186-8288-e2d3286c00a1"]
+}, Open  ]],
+Cell[6640, 211, 733, 15, 132, "Text",ExpressionUUID->"9f317910-e299-4235-ab20-0028c7030a4d"],
+Cell[CellGroupData[{
+Cell[7398, 230, 559, 16, 71, "Input",ExpressionUUID->"c9fb3ae7-5cac-42a0-af99-0a065554c1c9"],
+Cell[7960, 248, 229, 5, 58, "Output",ExpressionUUID->"ba4460a4-adb4-45ff-9783-f186f1c24be2"]
+}, Open  ]],
+Cell[8204, 256, 705, 15, 132, "Text",ExpressionUUID->"2dc65c6b-00c6-4e8b-b360-eabcafdccd69"],
+Cell[CellGroupData[{
+Cell[8934, 275, 547, 16, 71, "Input",ExpressionUUID->"a894bbb1-b3a4-4457-abe3-8d7db8528f23"],
+Cell[9484, 293, 207, 4, 37, "Output",ExpressionUUID->"00ef7b74-71f3-4cff-83d2-d6f6c7597a3e"]
+}, Open  ]],
+Cell[9706, 300, 331, 10, 6, "Text",ExpressionUUID->"3fcea2b7-9af0-43c5-a22b-7bcf58cd5355"],
+Cell[10040, 312, 987, 20, 252, "Text",ExpressionUUID->"ed101484-48ff-4073-884d-f6b59c3c790b"],
+Cell[CellGroupData[{
+Cell[11052, 336, 934, 22, 71, "Input",ExpressionUUID->"06e0c043-1df0-46f5-b511-27d46547c5a0"],
+Cell[11989, 360, 476, 11, 41, "Output",ExpressionUUID->"2a80e9cb-5b32-4c56-ba97-5a2aff5867b5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12502, 376, 176, 4, 49, "Input",ExpressionUUID->"4730ff12-1ff2-406c-95c2-8ca3dd884754"],
+Cell[12681, 382, 169, 3, 37, "Output",ExpressionUUID->"11e7d1b6-c1f7-42e9-b289-7827b3d18112"]
+}, Open  ]],
+Cell[12865, 388, 708, 14, 135, "Text",ExpressionUUID->"83542db7-5c0d-4846-8226-da05c38472c1"],
+Cell[CellGroupData[{
+Cell[13598, 406, 718, 21, 71, "Input",ExpressionUUID->"efe33a5f-b66a-41ac-a414-280809cdf936"],
+Cell[14319, 429, 309, 8, 41, "Output",ExpressionUUID->"0003faa1-1b67-49d9-bb84-da432572dfae"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14665, 442, 175, 4, 49, "Input",ExpressionUUID->"6b4b2302-0c97-49a0-bf6f-4ae904f3a29c"],
+Cell[14843, 448, 223, 4, 37, "Output",ExpressionUUID->"406ad0b1-383e-4ed7-bcd4-8ef247441ee1"]
+}, Open  ]],
+Cell[15081, 455, 958, 17, 157, "Text",ExpressionUUID->"d4a6669a-5a14-4332-a8c3-6e16198ce151"],
+Cell[CellGroupData[{
+Cell[16064, 476, 614, 16, 71, "Input",ExpressionUUID->"2562938d-a70d-4b20-af48-70700bfb4ef5"],
+Cell[16681, 494, 328, 9, 41, "Output",ExpressionUUID->"7f0bb3d2-8191-4b77-bcca-85759ab6bf19"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17046, 508, 178, 4, 49, "Input",ExpressionUUID->"df342786-4865-4c0d-a839-1a7c880785d4"],
+Cell[17227, 514, 147, 3, 37, "Output",ExpressionUUID->"b83a680e-6600-47e2-ad1d-78ea7537b2a4"]
+}, Open  ]],
+Cell[17389, 520, 234, 5, 34, "Text",ExpressionUUID->"af7ac3c8-76c3-4dd0-918f-617a6081a59d"],
+Cell[CellGroupData[{
+Cell[17648, 529, 252, 7, 70, "Input",ExpressionUUID->"ce77d975-2a3c-4cdd-a2e4-50dfe3a13851"],
+Cell[17903, 538, 144, 2, 37, "Output",ExpressionUUID->"de24630e-5c86-415b-aa08-b9c39a2999ba"]
+}, Open  ]],
+Cell[18062, 543, 760, 19, 137, "Text",ExpressionUUID->"3f8da779-eb61-41eb-861c-1e038e12f19a"],
+Cell[CellGroupData[{
+Cell[18847, 566, 466, 14, 71, "Input",ExpressionUUID->"8b5dab1f-c444-482e-916f-403ebac341f1"],
+Cell[19316, 582, 181, 5, 58, "Output",ExpressionUUID->"e0bf334d-a8c3-49ec-9837-60e2509c83c8"]
+}, Open  ]],
+Cell[19512, 590, 1642, 45, 219, "Text",ExpressionUUID->"679548a4-2d54-4328-aba5-98fcba59c7c2"],
+Cell[CellGroupData[{
+Cell[21179, 639, 624, 17, 71, "Input",ExpressionUUID->"0ed47149-aa8d-4f7f-8148-ad8948ad1bec"],
+Cell[21806, 658, 225, 5, 58, "Output",ExpressionUUID->"8d5462f7-b56f-49f8-983b-d61f5b8cdad4"]
+}, Open  ]],
+Cell[22046, 666, 609, 12, 156, "Text",ExpressionUUID->"d70d0e71-32a7-4c34-af1d-e8a3f3b8f87c"],
+Cell[CellGroupData[{
+Cell[22680, 682, 495, 12, 71, "Input",ExpressionUUID->"3d9b92a0-b85b-470a-912a-e6175da71544"],
+Cell[23178, 696, 210, 4, 37, "Output",ExpressionUUID->"02ae1d2d-6308-4ef6-b8bd-f45833b27805"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23425, 705, 74, 0, 55, "Section",ExpressionUUID->"6ab6f729-81b5-454e-aefc-b3f05daf3f1a"],
+Cell[23502, 707, 961, 22, 157, "Text",ExpressionUUID->"6dfb4a3f-eab1-4658-970c-7e85fe2589bc"],
+Cell[CellGroupData[{
+Cell[24488, 733, 675, 16, 72, "Input",ExpressionUUID->"013c1c5f-8cbe-4afc-805f-f60a9e065d4f"],
+Cell[25166, 751, 307, 6, 37, "Output",ExpressionUUID->"bd65e123-cb00-4a06-be78-cba66690f4e1"]
+}, Open  ]],
+Cell[25488, 760, 1047, 23, 158, "Text",ExpressionUUID->"45883f0c-7e5e-4189-a649-d2b201a1fd80"],
+Cell[CellGroupData[{
+Cell[26560, 787, 727, 17, 72, "Input",ExpressionUUID->"47858584-e016-4bc9-b398-bbd5e9a5429b"],
+Cell[27290, 806, 333, 7, 37, "Output",ExpressionUUID->"df14e4e2-6ddd-4657-ae11-5d8163222065"]
+}, Open  ]],
+Cell[27638, 816, 1084, 24, 158, "Text",ExpressionUUID->"4b5878f8-8b12-4e2a-b071-a6384b940bae"],
+Cell[CellGroupData[{
+Cell[28747, 844, 775, 18, 72, "Input",ExpressionUUID->"116e96d3-3d4d-44aa-a5e0-53113d031251"],
+Cell[29525, 864, 377, 8, 58, "Output",ExpressionUUID->"746a4fa3-a083-4240-b8ee-9ef5a16da036"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29951, 878, 145, 3, 55, "Section",ExpressionUUID->"22ddef7e-f8ce-4eb8-835e-b9427db959e9"],
+Cell[30099, 883, 861, 15, 156, "Text",ExpressionUUID->"050b91ba-ddbd-4707-ab0a-df1fc9e6e179"],
+Cell[CellGroupData[{
+Cell[30985, 902, 857, 19, 71, "Input",ExpressionUUID->"7208011c-f985-4c78-a5c3-a344a174669f"],
+Cell[31845, 923, 378, 7, 37, "Output",ExpressionUUID->"62971ce3-f7fb-4785-b4d8-d0ff03b57698"]
+}, Open  ]],
+Cell[32238, 933, 769, 14, 83, "Text",ExpressionUUID->"733a561d-c611-4371-9fcc-594f458b36e2"],
+Cell[CellGroupData[{
+Cell[33032, 951, 909, 20, 71, "Input",ExpressionUUID->"f2e42e93-d821-4549-b027-c24d032fad81"],
+Cell[33944, 973, 405, 8, 37, "Output",ExpressionUUID->"7a2e01c1-9dcc-4c9d-b0cd-f5cd6ca48578"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34398, 987, 74, 0, 55, "Section",ExpressionUUID->"c097a688-dc0b-422f-8ad0-373176e02b17"],
+Cell[34475, 989, 1407, 31, 213, "Text",ExpressionUUID->"2f72ac17-a097-4057-b56c-cc86f2309984"],
+Cell[CellGroupData[{
+Cell[35907, 1024, 854, 18, 71, "Input",ExpressionUUID->"6b395ef6-19b9-4039-a51a-4d97a2144201"],
+Cell[36764, 1044, 424, 9, 58, "Output",ExpressionUUID->"f2c1ba93-083e-4442-aff7-0a11d080e082"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37225, 1058, 593, 16, 71, "Input",ExpressionUUID->"badf0ba1-2f55-46a9-ae8d-76e127082f19"],
+Cell[37821, 1076, 206, 4, 37, "Output",ExpressionUUID->"26d849a9-1fde-485d-b525-a664ab2389bd"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38076, 1086, 74, 0, 55, "Section",ExpressionUUID->"97ae6e81-bdec-4707-b105-5853c3fb8531"],
+Cell[38153, 1088, 1605, 34, 190, "Text",ExpressionUUID->"70fe7013-080c-44f9-9ffb-f8239ab257de"],
+Cell[39761, 1124, 1751, 49, 300, "Text",ExpressionUUID->"4c4c757f-8dea-43aa-8464-1228c3c9e340"],
+Cell[CellGroupData[{
+Cell[41537, 1177, 681, 18, 71, "Input",ExpressionUUID->"59d890e4-35f9-4601-a092-dd6378a08311"],
+Cell[42221, 1197, 230, 5, 37, "Output",ExpressionUUID->"4e48f01b-c0f6-401e-9224-20fe012e5055"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42488, 1207, 887, 27, 71, "Input",ExpressionUUID->"cdc0c0cb-803f-470f-ba5d-0a93329a2b69"],
+Cell[43378, 1236, 227, 5, 37, "Output",ExpressionUUID->"03877a12-728e-41e3-a447-a93449e61d6a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43642, 1246, 269, 7, 49, "Input",ExpressionUUID->"7003596b-669f-4b9b-a9d1-1219829ce46d"],
+Cell[43914, 1255, 209, 5, 37, "Output",ExpressionUUID->"08cdacad-c643-48da-9558-d52c75e0e934"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44172, 1266, 223, 5, 55, "Section",ExpressionUUID->"9eb6ae5a-c4ea-4ccc-830a-3078fb26b9eb"],
+Cell[44398, 1273, 1673, 47, 299, "Text",ExpressionUUID->"b950020e-1470-4494-9cd3-8985420a9d89"],
+Cell[CellGroupData[{
+Cell[46096, 1324, 1486, 26, 71, "Input",ExpressionUUID->"02416f71-fa1f-4f17-b0be-8de121d97dbe"],
+Cell[47585, 1352, 920, 15, 37, "Output",ExpressionUUID->"7a7a3df5-d661-4af0-a7b6-fdc0c75f29c4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48542, 1372, 815, 19, 71, "Input",ExpressionUUID->"168cd458-623c-4145-b3e5-39b8f04565ef"],
+Cell[49360, 1393, 280, 5, 37, "Output",ExpressionUUID->"42a43f3c-ac83-478e-9ba3-911df1a750a5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[49677, 1403, 221, 6, 49, "Input",ExpressionUUID->"d6fd5953-041d-4cd0-b55e-a583b2d58043"],
+Cell[49901, 1411, 259, 6, 37, "Output",ExpressionUUID->"868caf08-7ac0-417f-8751-7df6c2e1cc99"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[50209, 1423, 74, 0, 55, "Section",ExpressionUUID->"1b886674-c2eb-4781-860c-a48d08c3f478"],
+Cell[50286, 1425, 777, 22, 150, "Text",ExpressionUUID->"bf985e65-a952-48c4-846f-c0861c4081d4"],
+Cell[CellGroupData[{
+Cell[51088, 1451, 485, 15, 71, "Input",ExpressionUUID->"f209ae52-56c4-4155-85e9-08decb7a32d0"],
+Cell[51576, 1468, 155, 3, 37, "Output",ExpressionUUID->"191fed64-dd02-4432-913d-89663aa76fdd"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[51780, 1477, 74, 0, 55, "Section",ExpressionUUID->"c0a550ee-b6fb-4bc6-894a-d5f1bcd6a771"],
+Cell[51857, 1479, 383, 8, 153, "Text",ExpressionUUID->"49cf6e91-5f9a-458c-8747-0203ce3ba2f4"],
+Cell[CellGroupData[{
+Cell[52265, 1491, 462, 11, 71, "Input",ExpressionUUID->"6b4e448f-b344-4340-a110-67c3e86103fa"],
+Cell[52730, 1504, 220, 4, 58, "Output",ExpressionUUID->"39bc66bb-1f64-4890-afb1-13174f33390f"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52999, 1514, 74, 0, 55, "Section",ExpressionUUID->"e9796d09-6242-49eb-b32d-612d690feeec"],
+Cell[53076, 1516, 735, 13, 160, "Text",ExpressionUUID->"58cb28cb-e8cb-438e-82fd-6ad815a51fbe"],
+Cell[CellGroupData[{
+Cell[53836, 1533, 622, 16, 71, "Input",ExpressionUUID->"0e8fff20-26f7-475f-b757-cc226c869a75"],
+Cell[54461, 1551, 347, 8, 58, "Output",ExpressionUUID->"76419ec9-2485-49c7-8e47-5baf2c292bfe"]
+}, Open  ]],
+Cell[54823, 1562, 842, 15, 183, "Text",ExpressionUUID->"6b98ba22-7933-4125-9d95-8d5fd7489215"],
+Cell[CellGroupData[{
+Cell[55690, 1581, 431, 14, 71, "Input",ExpressionUUID->"1ab4175b-fa79-4efd-8cfd-3cf505da5ff5"],
+Cell[56124, 1597, 201, 6, 58, "Output",ExpressionUUID->"607a6853-b19e-4e6e-ae85-1d920ae41421"]
+}, Open  ]],
+Cell[56340, 1606, 615, 12, 106, "Text",ExpressionUUID->"4ab61fc8-5df9-4285-88b3-49c08684ce40"],
+Cell[CellGroupData[{
+Cell[56980, 1622, 452, 14, 71, "Input",ExpressionUUID->"722b83c4-3e82-4b7b-946c-15674bcbf089"],
+Cell[57435, 1638, 158, 4, 37, "Output",ExpressionUUID->"2649a630-17d3-414e-bf18-17422e624a79"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
