@@ -1,0 +1,85 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2315,         77]
+NotebookOptionsPosition[      1713,         59]
+NotebookOutlinePosition[      2058,         74]
+CellTagsIndexPosition[      2015,         71]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Assignment 10", "Text",
+ CellChangeTimes->{{3.733828328912216*^9, 3.733828332378646*^9}, {
+  3.7338909338016033`*^9, 
+  3.733890934629569*^9}},ExpressionUUID->"6de67b83-ab77-4402-86dd-\
+589eb036fa1e"],
+
+Cell["5.", "Text",
+ CellChangeTimes->{{3.733828328912216*^9, 3.733828332378646*^9}, {
+  3.733890943552814*^9, 
+  3.733890944816887*^9}},ExpressionUUID->"eb9bc06e-4d30-4472-a5c8-\
+7456a23b123d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubsuperscriptBox["\[Integral]", "0", 
+   RowBox[{"2", "\[Pi]"}]], 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", 
+    FractionBox["\[Pi]", "3"]], 
+   RowBox[{"16", "*", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"Sin", "[", "\[Phi]", "]"}], ")"}], "3"], 
+    RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+    RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.733890951253086*^9, 
+  3.733891026363496*^9}},ExpressionUUID->"0a94efd7-4cb2-4e9e-91ff-\
+696793b141d6"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"20", " ", "\[Pi]"}], "3"]], "Output",
+ CellChangeTimes->{
+  3.733891033136106*^9},ExpressionUUID->"6d98b33b-c203-4329-b8ba-\
+ef4f131d3804"]
+}, Open  ]]
+},
+WindowSize->{808, 648},
+WindowMargins->{{44, Automatic}, {Automatic, 35}},
+FrontEndVersion->"11.2 for Linux x86 (64-bit) (September 10, 2017)",
+StyleDefinitions->"LilacBlueBold.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 206, 4, 50, "Text",ExpressionUUID->"6de67b83-ab77-4402-86dd-589eb036fa1e"],
+Cell[767, 26, 193, 4, 50, "Text",ExpressionUUID->"eb9bc06e-4d30-4472-a5c8-7456a23b123d"],
+Cell[CellGroupData[{
+Cell[985, 34, 531, 15, 71, "Input",ExpressionUUID->"0a94efd7-4cb2-4e9e-91ff-696793b141d6"],
+Cell[1519, 51, 178, 5, 58, "Output",ExpressionUUID->"6d98b33b-c203-4329-b8ba-ef4f131d3804"]
+}, Open  ]]
+}
+]
+*)
+
